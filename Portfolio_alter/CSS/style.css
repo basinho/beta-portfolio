@@ -1,0 +1,1172 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Glacial Indifference', sans-serif;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+.main, .main-project{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: Anton, sans-serif;
+}
+
+p{
+    font-family: 'Glacial Indifference';
+    font-size: 16px;
+}
+
+.firstBloc, .competences2, .container,.main-project, .projectContainer{
+    background-image: url('../Images/brown-wooden-textured-flooring-background.jpg');
+}
+.firstBloc{
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+    padding: 1rem 2rem;
+    gap: 8rem;
+}
+
+.logo-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6rem;
+}
+
+.navigation div {
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 0,03rem;
+}
+
+.basile-duarte {
+    font-family: 'Metal Mania', cursive;
+    font-size: 64px;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+}
+
+.developper-web h1 {
+    width: 625px;
+    text-align: center;
+    font-size: 128px;
+    font-family: 'Metal Mania', cursive; 
+    font-weight: lighter;
+}
+
+.profil3, .competences2, .mes-real, .container {
+    margin: 0 auto;
+}
+
+/* Profil Section */
+.profil3{
+    padding-top: 1rem;
+    background-color: white;
+}
+
+.profile-title {
+    font-family: 'Anton';
+    font-weight: lighter;
+    font-size: 48px;
+    color: black;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    
+}
+
+.profile-p1, .profile-p2 {
+    width: 875px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    font-family: 'Glacial Indifference';
+    font-style: italic;
+    color: #737373;
+    text-align: left;
+    height: 125px;
+}
+
+.profile-paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+.pic-cv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-profil-icon {
+    display: block;
+    margin: 2rem auto;
+   
+    height: auto;
+    border-radius: 10px;
+    width: 23rem;
+    height: 29,5rem;
+}
+
+.cv{
+    font-family: Anton, sans-serif;
+    font-size: 24px;
+    color: black;
+    background-color: white;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin: 0;
+    gap: 15vw;
+}
+/* Compétences Section */
+.competences2{
+    background-size: 100%;
+    
+}
+
+.competenceTitles{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.competernceTitle{
+    font-family: 'Anton';
+    font-weight: lighter;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.competenceText{
+    width: 552px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    font-family: 'Glacial Indifference';
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 19vw;
+}
+
+.devBloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.designBloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill_1, .skill_2{
+    text-align: center;
+}
+
+.dev-tools{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    gap: 5.5rem;
+}
+
+.dev-tools p, .design-tools p{
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    font-family: 'Glacial Indifference';
+    font-weight: lighter;
+}
+
+.htmlCase, .cssCase, .jsCase, .phpCase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sqlCase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30%;
+}
+
+.design-tools{
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-rows: 40% auto;
+    padding: 10px;
+    gap: 2em;
+}
+
+.figmaCase, .photoshopCase, .illustratorCase{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.dev-tools img, .design-tools img {
+    width: 80px; 
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px; 
+    transition: transform 0.3s ease;
+}
+
+.dev-tools img:hover, .design-tools img:hover {
+    transform: scale(1.1); 
+}
+
+.bold p{
+    font-weight: bold;
+}
+
+
+/* Réalisations Section */
+.mes-real {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 700px; 
+    position: relative; 
+    overflow: hidden; 
+    text-align: center;
+    background-color: black; 
+    padding: 0;
+}
+
+.mes-real button {
+    text-align: center;
+    position: relative;
+    z-index: 10; 
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    height: 10%;
+    width: 25%;
+    border-radius: 25px;
+    background-color: #0b0b0b;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.mes-real button:hover {
+    background-color: #cf3e3e;
+}
+/* Conteneur des images */
+.realContent {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.25;
+    z-index: 1;
+}
+.realContent img {
+    position: relative; 
+    width: 33.33%; 
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+/* SECTION CONTACT */
+.container {
+    text-align: center;
+    padding-top: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.titleContact {
+    width: 100%;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.contentContact {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+/* Formulaire de contact */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px; 
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+#contact-form label {
+    text-align: left;
+    font-size: 1rem;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    height: 50px;
+    width: 100%; /* Passe en pleine largeur */
+    color: #fff;
+    border-radius: 25px;
+    background-color: #0b0b0b;
+    border: 1px solid #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #cf3e3e;
+}
+
+/* Bloc des informations */
+.contact-bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.emailInfo, .phone {
+    font-size: 1rem;
+    text-align: center; /* Centre les informations */
+    color: #ccc;
+}
+
+/* Social Media */
+.socialContact {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.socialContact a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.socialContact a:hover {
+    color: #cf3e3e;
+}
+
+
+
+/* Projet-page Section*/
+
+/* Project Presentation Section */
+.projectClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.card {
+    width: 50%;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__content figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.card__content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.card__content::after {
+    content: attr(data-project-name); 
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    z-index: 2; 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.card__content:hover::before {
+    opacity: 1;
+}
+
+.card__content:hover::after {
+    opacity: 1;
+}
+
+.card__content:hover img {
+    opacity: 0.3; 
+}
+
+.main-project {
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Project Section */
+.projectContainer {
+    background-size: 100%;
+}
+
+.projectContainer h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.projectContainer p {
+    font-family: 'Glacial Indifference', sans-serif;
+    color: #e2e2e2;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2vh;
+}
+
+.intro {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 70%;
+    font-size: 1.2rem;
+    color: #d6d6d6;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    border-left: 4px solid #ff6f61;
+    border-radius: 10px;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 0 2vw;
+    margin-top: 5vh;
+}
+
+
+.presentation p {
+    max-width: 55%;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.presentation img {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+.titleProjet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    gap: 5vw;
+}
+
+.titleProjet a{
+    text-decoration: none;
+}
+.little{
+    width:30%;
+}
+.button {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+
+  }
+.projectContainer button {
+    text-align: center;
+    position: relative;
+    z-index: 10; 
+    font-size: 16px;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    height: 10%;
+    width: 5%;
+    border-radius: 25px;
+    background-color: #0b0b0b;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.projectContainer button:hover {
+    background-color: #cf3e3e;
+}
+
+.lien{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.lien a{
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES POUR LE HEADER */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .basile-duarte {
+        font-size: 2.5rem;
+    }
+
+    .navigation {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .logo-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .header {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .basile-duarte {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+
+    .navigation div {
+        font-size: 0.9rem; 
+    }
+
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .basile-duarte {
+        font-size: 1.8rem;
+    }
+
+    .navigation div {
+        font-size: 0.8rem;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .developper-web h1 {
+        font-size: 5rem; /* Réduction de la taille du titre */
+    }
+
+    .developper-web p {
+        font-size: 1rem;
+        max-width: 90%; /* Plus d'espace pour le texte */
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .developper-web h1 {
+        font-size: 4rem; /* Encore plus compact */
+    }
+
+    .developper-web p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .developper-web h1 {
+        font-size: 3rem;
+    }
+
+    .developper-web p {
+        font-size: 0.8rem;
+    }
+}
+/* Tablettes */
+@media (max-width: 1024px) {
+    .developper-web h1 {
+        font-size: 5rem; /* Réduction de la taille du titre */
+    }
+
+    .developper-web p {
+        font-size: 1rem;
+        max-width: 90%; /* Plus d'espace pour le texte */
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .developper-web h1 {
+        font-size: 4rem; /* Encore plus compact */
+    }
+
+    .developper-web p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .developper-web h1 {
+        font-size: 3rem;
+    }
+
+    .developper-web p {
+        font-size: 0.8rem;
+    }
+}
+/* MEDIA QUERIES POUR LA SECTION PROFILE */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .profile-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-paragraph {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .profile-title {
+        font-size: 2.5rem;
+    }
+
+    .image-profil-icon {
+        width: 250px;
+    }
+
+    .cv {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .profile-paragraph {
+        font-size: 0.9rem;
+    }
+
+    .profile-title {
+        font-size: 2rem;
+    }
+
+    .image-profil-icon {
+        width: 200px;
+    }
+
+    .cv {
+        font-size: 0.8rem;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .profile-paragraph {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .profile-title {
+        font-size: 1.8rem;
+    }
+
+    .image-profil-icon {
+        width: 150px;
+    }
+
+    .cv {
+        font-size: 0.75rem;
+    }
+}
+
+/* MEDIA QUERIES POUR LA SECTION COMPETENCES */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .tools {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .competernceTitle {
+        font-size: 2.5rem;
+    }
+
+    .competenceText {
+        font-size: 1.1rem;
+    }
+
+    .dev-tools, .design-tools {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .dev-tools img, .design-tools img {
+        width: 70px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .competernceTitle {
+        font-size: 2rem;
+    }
+
+    .competenceText {
+        font-size: 1rem;
+    }
+
+    .tools {
+        gap: 2rem;
+    }
+
+    .dev-tools img, .design-tools img {
+        width: 60px;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .competernceTitle {
+        font-size: 1.8rem;
+    }
+
+    .competenceText {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .tools {
+        gap: 1.5rem;
+    }
+
+    .dev-tools img, .design-tools img {
+        width: 50px;
+    }
+}
+
+/* MEDIA QUERIES POUR LA SECTION REALISATIONS */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .realContent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .realContent img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .mes-real button {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .realContent {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .realContent img {
+        width: 80%;
+        height: auto;
+    }
+
+    .mes-real button {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .realContent img {
+        width: 90%;
+    }
+
+    .mes-real button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+/* MEDIA QUERIES POUR LA SECTION CONTACT */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .contentContact {
+        flex-direction: column; 
+        gap: 2rem;
+    }
+
+    #contact-form {
+        max-width: 90%; 
+    }
+
+    #contact-form input, #contact-form textarea {
+        font-size: 0.9rem; 
+    }
+
+    #contact-form button {
+        font-size: 0.9rem;
+    }
+
+    .emailInfo, .phone {
+        font-size: 0.9rem; 
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .contentContact {
+        gap: 1.5rem; 
+    }
+
+    #contact-form {
+        width: 100%; 
+    }
+
+    #contact-form input, #contact-form textarea {
+        font-size: 0.8rem; 
+    }
+
+    #contact-form button {
+        font-size: 0.8rem;
+        padding: 0.7rem;
+    }
+
+    .emailInfo, .phone {
+        font-size: 0.8rem; 
+    }
+
+    .socialContact a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .contentContact {
+        gap: 1rem;
+    }
+
+    #contact-form {
+        padding: 1rem;
+    }
+
+    #contact-form input, #contact-form textarea {
+        font-size: 0.75rem;
+    }
+
+    #contact-form button {
+        font-size: 0.75rem;
+    }
+
+    .emailInfo, .phone {
+        font-size: 0.75rem; 
+    }
+
+    .socialContact a {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* MEDIA QUERIES POUR LA SECTION PROJET */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .presentation p, .presentation img {
+        max-width: 100%;
+    }
+
+    .projectContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .projectContainer p {
+        font-size: 1rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .presentation {
+        gap: 1.5rem;
+    }
+
+    .presentation p {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .projectContainer h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .presentation {
+        gap: 1rem;
+    }
+
+    .projectContainer h1 {
+        font-size: 1.8rem;
+    }
+
+    .projectContainer p {
+        font-size: 0.8rem;
+    }
+
+    .presentation img {
+        width: 90%;
+    }
+}
+
+/* MEDIA QUERIES POUR LA SECTION PROJECT */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .presentation p, .presentation img {
+        max-width: 100%;
+    }
+
+    .projectContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .projectContainer p {
+        font-size: 1rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .presentation {
+        gap: 1.5rem;
+    }
+
+    .presentation p {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .projectContainer h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+    .presentation {
+        gap: 1rem;
+    }
+
+    .projectContainer h1 {
+        font-size: 1.8rem;
+    }
+
+    .projectContainer p {
+        font-size: 0.8rem;
+    }
+
+    .presentation img {
+        width: 90%;
+    }
+}
