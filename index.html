@@ -1,193 +1,193 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basile Duarte | Portfolio</title>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:ital,wght@0,400;0,700;1,400&display=swap"  rel="stylesheet"/>
-  </head>
-  <body>
-    <div class="main">
-      <div class="firstBlock">
-        <!-- Header Section -->
-        <header class="header">
-          <div class="navigation">
-            <div class="profil" id="profilContainer">Profil</div>
-            <div class="competences" id="competencesContainer">Compétences</div>
-            <div class="realisations" id="realisationsContainer">Réalisations</div>
-            <div class="contact" id="contactContainer">Contact</div>
-          </div>
-        </header>
-        <div class="mainTitle">
-          <h1 id="word1">Développeur</h1>
-          <h1 id="word2">Web/App</h1>
-          <h2 id="word3">Basile Duarte</h2>
-        </div>
-      </div>
-      <!-- Profil Section -->
-      <section class="profil3" data-scroll-to="profilContainer">
-        <h2 class="profile-title">Qui suis-je ?</h2>
-        <div class="profile-content">
-          <div class="profile-paragraph">
-            <p class="profile-p1">
-              Salut ! Moi c’est Basile, passionné de sport et de musique mais également de jeux vidéos et de nouvelles technologies. 
-              Je suis actuellement en formation à l’École By CCI de Haute-Savoie en vue d’un DN MADE mention numérique ! 
-            </p>
-            <p class="profile-p2">
-              Pourquoi cette formation ? Parce que j’adore le code ! Je suis aussi curieux de savoir comment les sites sont créés, comment ils marchent. 
-              C’est pour ces raisons que j’ai décidé de rejoindre ce cursus et à mon tour pouvoir créer de sites fonctionnels et qui plaisent à l’oeil.
-            </p>
-          </div>
-          <div class="pic-cv">
-            <img class="image-profil-icon" alt="Image Profil" src="Images/image profil.png"/>
-            <button class="cv" onclick="window.open('Fichiers/CV professionnel noir simple.pdf', '_blank')">Télécharger mon CV</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Compétences Section -->
-  <section class="competences2" data-scroll-to="competencesContainer">
-     <div class="competenceTitles">
-        <h2 class="competenceTitle">Compétences</h2>
-        <p class="competenceText">
-            Voici les différents logiciels et langages que j’utilise ainsi que
-            mon niveau de maîtrise de ces derniers
-        </p>
-    </div>
-    <div class="tools">
-      <div class="devBloc">
-        <div class="skill_1">Développement Web</div>
-        <div class="dev-tools">
-          <div class="htmlCase">
-            <img class="new-html-logo-1-icon" alt="HTML" src="Images/new_html_logo.png" />
-            <p>Intermédiaire</p>
-          </div>
-          <div class="cssCase">
-            <img class="new-css-logo-1-icon" alt="CSS" src="Images/new_css_logo.png" />
-            <p>Intermédiaire</p>
-          </div>
-          <div class="jsCase">
-            <img class="new-js-logo-1-icon" alt="JavaScript" src="Images/new_js_logo.png" />
-            <p>Intermédiaire</p>
-          </div>
-          <div class="sqlCase">
-            <img class="new-sql-logo-1-icon" alt="SQL" src="Images/new_sql_logo.png" />
-            <p>Intermédiaire</p>
-          </div>
-          <div class="phpCase">
-            <img class="php-logo-icon-144990" alt="PHP" src="Images/php_logo_icon_144990 1.png" />
-            <p>Les bases</p>
-          </div>
-        </div>
-      </div>
-      <div class="designBloc">
-        <div class="skill_2">Web-Design</div>
-        <div class="design-tools">
-          <div class="figmaCase">
-            <p style="font-weight: bold">Figma</p>
-            <img class="figma-logo-svgrepo-com-1-icon" alt="Figma" src="Images/figma-logo-svgrepo-com.png" />
-            <p>Intermédiaire</p>
-          </div>
-          <div class="photoshopCase">
-            <p style="font-weight: bold">Photoshop</p>
-            <img class="new-photoshop-logo-1-icon" alt="Photoshop" src="Images/new_photoshop_logo.png" />
-            <p>Les bases</p>
-          </div>
-          <div class="illustratorCase">
-            <p style="font-weight: bold">Illustrator</p>
-            <img class="new-illustrator-logo" alt="Illustrator" src="Images/new_illustrator_logo.png" />
-            <p>Les bases</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-      <!-- Réalisations Section -->
-      <section class="mes-real" data-scroll-to="mesRealContainer">
-        <button id="mesRealisationsText" onclick="window.location.href='projets.html'">Mes Réalisations</button>
-        <div class="realContent">
-          <img
-            class="image-7-icon"
-            alt="Réalisations 1"
-            src="Images/Screen Sport Méca.png"
-          />
-          <img
-            class="image-7-icon1"
-            alt="Réalisations 2"
-            src="Images/Screen CineSympa.png"
-          />
-          <img
-            class="image-7-icon2"
-            alt="Réalisations 3"
-            src="Images/Screen Cache-Cache.png"
-          />
-        </div>
-      </section>
-      <!-- Contact Section -->
-      <section class="container" data-scroll-to="contactContainer">
-        <h1 class="titleContact">Me contacter</h1>
-        <div class="contentContact">
-          <form id="contact-form">
-            <label for="email">Email :</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Votre email"
-            />
-
-            <label for="objet">Objet :</label>
-            <input type="text" id="objet" name="objet" placeholder="Objet" />
-
-            <label for="message">Message :</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Votre message"
-            ></textarea>
-
-            <button type="submit">Envoyer</button>
-          </form>
-          <div class="socialContact">
-            <div class="contact-bloc">
-              <p class="mes-contacts">Mes contacts :</p>
-              <a
-                href="mailto:duartebasile6@gmail.com"
-                class="email" style="text-decoration: none; color:white;"
-                >duartebasile6@gmail.com</a
-              >
-              <p class="phone">+33 (0)6 41 43 67 63</p>
-            </div>
-
-            <div class="mes-reseaux">
-              <p>Mes réseaux :</p>
-              <img
-                alt="Facebook"
-                src="Images/facebook-removebg-preview 2.png"
-              />
-              <img
-                alt="LinkedIn"
-                src="Images/linkedin-removebg-preview 2.png"
-              />
-              <img
-                alt="Instagram"
-                src="Images/instagram-removebg-preview 2.png"
-              />
-        </div>
-      </section>
-    </div>
-
-    <!-- JavaScript -->
-    <script type="module" src="JS/script.js"></script>
-  </body>
-</html>
+ <html lang="fr">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Basile Duarte | Portfolio</title>
+ 
+     <!-- Stylesheets -->
+     <link rel="stylesheet" href="CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap" rel="stylesheet"/>
+     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania:wght@400&display=swap" rel="stylesheet"/>
+     <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:ital,wght@0,400;0,700;1,400&display=swap"  rel="stylesheet"/>
+   </head>
+   <body>
+     <div class="main">
+       <div class="firstBloc">
+         <!-- Header Section -->
+         <header class="header">
+           <img class="logo-icon" alt="Logo" src="Images/3.png" />
+ 
+           <div class="navigation">
+             <div class="profil" id="profilContainer">Profil</div>
+             <div class="competences" id="competencesContainer">Compétences</div>
+             <div class="basile-duarte">Basile Duarte</div>
+             <div class="realisations" id="realisationsContainer">Réalisations</div>
+             <div class="contact" id="contactContainer">Contact</div>
+           </div>
+         </header>
+ 
+         <!-- Main Sections -->
+         <section class="developper-web">
+           <h1>Développeur Web/App</h1>
+         </section>
+       </div>
+       <!-- Profil Section -->
+       <section class="profil3" data-scroll-to="profilContainer">
+         <h2 class="profile-title">Qui suis-je ?</h2>
+         <div class="profile-content">
+           <div class="profile-paragraph">
+             <p class="profile-p1">
+               Salut ! Moi c’est Basile, passionné de sport et de musique mais également de jeux vidéos et de nouvelles technologies. 
+               Je suis actuellement en formation à l’École By CCI de Haute-Savoie en vue d’un DN MADE mention numérique ! 
+             </p>
+             <p class="profile-p2">
+               Pourquoi cette formation ? Parce que j’adore le code ! Je suis aussi curieux de savoir comment les sites sont créés, comment ils marchent. 
+               C’est pour ces raisons que j’ai décidé de rejoindre ce cursus et à mon tour pouvoir créer de sites fonctionnels et qui plaisent à l’oeil.
+             </p>
+           </div>
+           <div class="pic-cv">
+             <img class="image-profil-icon" alt="Image Profil" src="Images/image profil.png"/>
+             <button class="cv" onclick="window.open('Fichiers/CV professionnel noir simple.pdf', '_blank')">Télécharger mon CV</button>
+           </div>
+         </div>
+       </section>
+ 
+       <!-- Compétences Section -->
+   <section class="competences2" data-scroll-to="competencesContainer">
+      <div class="competenceTitles">
+         <h2 class="competenceTitle">Compétences</h2>
+         <p class="competenceText">
+             Voici les différents logiciels et langages que j’utilise ainsi que
+             mon niveau de maîtrise de ces derniers
+         </p>
+     </div>
+     <div class="tools">
+       <div class="devBloc">
+         <div class="skill_1">Développement Web</div>
+         <div class="dev-tools">
+           <div class="htmlCase">
+             <img class="new-html-logo-1-icon" alt="HTML" src="Images/new_html_logo.png" />
+             <p>Intermédiaire</p>
+           </div>
+           <div class="cssCase">
+             <img class="new-css-logo-1-icon" alt="CSS" src="Images/new_css_logo.png" />
+             <p>Intermédiaire</p>
+           </div>
+           <div class="jsCase">
+             <img class="new-js-logo-1-icon" alt="JavaScript" src="Images/new_js_logo.png" />
+             <p>Intermédiaire</p>
+           </div>
+           <div class="sqlCase">
+             <img class="new-sql-logo-1-icon" alt="SQL" src="Images/new_sql_logo.png" />
+             <p>Intermédiaire</p>
+           </div>
+           <div class="phpCase">
+             <img class="php-logo-icon-144990" alt="PHP" src="Images/php_logo_icon_144990 1.png" />
+             <p>Les bases</p>
+           </div>
+         </div>
+       </div>
+       <div class="designBloc">
+         <div class="skill_2">Web-Design</div>
+         <div class="design-tools">
+           <div class="figmaCase">
+             <p style="font-weight: bold">Figma</p>
+             <img class="figma-logo-svgrepo-com-1-icon" alt="Figma" src="Images/figma-logo-svgrepo-com.png" />
+             <p>Intermédiaire</p>
+           </div>
+           <div class="photoshopCase">
+             <p style="font-weight: bold">Photoshop</p>
+             <img class="new-photoshop-logo-1-icon" alt="Photoshop" src="Images/new_photoshop_logo.png" />
+             <p>Les bases</p>
+           </div>
+           <div class="illustratorCase">
+             <p style="font-weight: bold">Illustrator</p>
+             <img class="new-illustrator-logo" alt="Illustrator" src="Images/new_illustrator_logo.png" />
+             <p>Les bases</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+ 
+       <!-- Réalisations Section -->
+       <section class="mes-real" data-scroll-to="mesRealContainer">
+         <button id="mesRealisationsText" onclick="window.location.href='projets.html'">Mes Réalisations</button>
+         <div class="realContent">
+           <img
+             class="image-7-icon"
+             alt="Réalisations 1"
+             src="Images/Screen Sport Méca.png"
+           />
+           <img
+             class="image-7-icon1"
+             alt="Réalisations 2"
+             src="Images/Screen CineSympa.png"
+           />
+           <img
+             class="image-7-icon2"
+             alt="Réalisations 3"
+             src="Images/Screen Cache-Cache.png"
+           />
+         </div>
+       </section>
+       <!-- Contact Section -->
+       <section class="container" data-scroll-to="contactContainer">
+         <h1 class="titleContact">Me contacter</h1>
+         <div class="contentContact">
+           <form id="contact-form">
+             <label for="email">Email :</label>
+             <input
+               type="email"
+               id="email"
+               name="email"
+               placeholder="Votre email"
+             />
+ 
+             <label for="objet">Objet :</label>
+             <input type="text" id="objet" name="objet" placeholder="Objet" />
+ 
+             <label for="message">Message :</label>
+             <textarea
+               id="message"
+               name="message"
+               placeholder="Votre message"
+             ></textarea>
+ 
+             <button type="submit">Envoyer</button>
+           </form>
+           <div class="socialContact">
+             <div class="contact-bloc">
+               <p class="mes-contacts">Mes contacts :</p>
+               <a
+                 href="mailto:duartebasile6@gmail.com"
+                 class="email" style="text-decoration: none; color:white;"
+                 >duartebasile6@gmail.com</a
+               >
+               <p class="phone">+33 (0)6 41 43 67 63</p>
+             </div>
+ 
+             <div class="mes-reseaux">
+               <p>Mes réseaux :</p>
+               <img
+                 alt="Facebook"
+                 src="Images/facebook-removebg-preview 2.png"
+               />
+               <img
+                 alt="LinkedIn"
+                 src="Images/linkedin-removebg-preview 2.png"
+               />
+               <img
+                 alt="Instagram"
+                 src="Images/instagram-removebg-preview 2.png"
+               />
+         </div>
+       </section>
+     </div>
+ 
+     <!-- JavaScript -->
+     <script type="module" src="JS/script.js"></script>
+   </body>
+ </html>
