@@ -7,54 +7,63 @@
  
      <!-- Stylesheets -->
      <link rel="stylesheet" href="CSS/style.css" />
-     <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap" rel="stylesheet"/>
-     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania:wght@400&display=swap" rel="stylesheet"/>
-     <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:ital,wght@0,400;0,700;1,400&display=swap"  rel="stylesheet"/>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    </head>
    <body>
      <div class="main">
-       <div class="firstBloc">
+       <div class="firstBlock">
          <!-- Header Section -->
          <header class="header">
-           <img class="logo-icon" alt="Logo" src="Images/3.png" />
- 
-           <div class="navigation">
-             <div class="profil" id="profilContainer">Profil</div>
-             <div class="competences" id="competencesContainer">Compétences</div>
-             <div class="basile-duarte">Basile Duarte</div>
-             <div class="realisations" id="realisationsContainer">Réalisations</div>
-             <div class="contact" id="contactContainer">Contact</div>
+            <div class="navigation">
+             <div id="profilContainer">Profil</div>
+             <div id="competencesContainer">Compétences</div>
+             <div id="realisationsContainer">Réalisations</div>
+             <div id="contactContainer">Contact</div>
            </div>
          </header>
  
          <!-- Main Sections -->
-         <section class="developper-web">
-           <h1>Développeur Web/App</h1>
-         </section>
+         <div id="developper-web">
+           <h1>Développeur</h1>
+           <h1>Web</h1>
+           <h2>Basile Duarte</h2>
+         </div>
        </div>
        <!-- Profil Section -->
-       <section class="profil3" data-scroll-to="profilContainer">
-         <h2 class="profile-title">Qui suis-je ?</h2>
+       <section id="profil" data-scroll-to="profilContainer">
+         <h2 id="profilTitle">Qui suis-je ?</h2>
          <div class="profile-content">
            <div class="profile-paragraph">
-             <p class="profile-p1">
+             <p id="profile-p1">
                Salut ! Moi c’est Basile, passionné de sport et de musique mais également de jeux vidéos et de nouvelles technologies. 
                Je suis actuellement en formation à l’École By CCI de Haute-Savoie en vue d’un DN MADE mention numérique ! 
              </p>
-             <p class="profile-p2">
-               Pourquoi cette formation ? Parce que j’adore le code ! Je suis aussi curieux de savoir comment les sites sont créés, comment ils marchent. 
-               C’est pour ces raisons que j’ai décidé de rejoindre ce cursus et à mon tour pouvoir créer de sites fonctionnels et qui plaisent à l’oeil.
+             <p id="profile-p2">
+              Pourquoi j’ai choisi cette formation ? Eh bien, le code, c’est quelque chose qui m’attire. 
+              C’est fascinant de voir comment des lignes de code peuvent créer des sites web ou des applications qui sont à la fois fonctionnels et esthétiques. 
+              Je suis super curieux de comprendre comment les sites sont conçus, comment ils interagissent avec les utilisateurs et comment ils sont mis en ligne. 
+              Le défi de créer un site qui soit à la fois fluide, beau et intuitif m'enthousiasme énormément.
+             </p>
+             <p id="profile-p3">
+              Ce cursus me permet d’apprendre et de perfectionner mes compétences pour devenir un développeur web capable de créer des expériences numériques intéressantes et engageantes. 
+              C’est un mélange parfait entre la logique du code et l’artistique du design.
+              Je suis super motivé pour faire de mon rêve une réalité : créer des sites web qui non seulement marchent, mais qui envoient du lourd !
              </p>
            </div>
            <div class="pic-cv">
-             <img class="image-profil-icon" alt="Image Profil" src="Images/image profil.png"/>
-             <button class="cv" onclick="window.open('Fichiers/CV professionnel noir simple.pdf', '_blank')">Télécharger mon CV</button>
+             <img class="image-profil-icon" alt="Image Profil" src="Images/profilPic.JPG"/>
+             <button id="cv_btn" onclick="window.open('Fichiers/CV_Basile_Duarte.pdf', '_blank')">Télécharger mon CV</button>
            </div>
          </div>
        </section>
  
        <!-- Compétences Section -->
-   <section class="competences2" data-scroll-to="competencesContainer">
+   <section id="competences" data-scroll-to="competencesContainer">
       <div class="competenceTitles">
          <h2 class="competenceTitle">Compétences</h2>
          <p class="competenceText">
@@ -67,23 +76,23 @@
          <div class="skill_1">Développement Web</div>
          <div class="dev-tools">
            <div class="htmlCase">
-             <img class="new-html-logo-1-icon" alt="HTML" src="Images/new_html_logo.png" />
+             <img class="new-html-logo-1-icon" alt="HTML" src="Images/html.png" />
              <p>Intermédiaire</p>
            </div>
            <div class="cssCase">
-             <img class="new-css-logo-1-icon" alt="CSS" src="Images/new_css_logo.png" />
+             <img class="new-css-logo-1-icon" alt="CSS" src="Images/css.png" />
              <p>Intermédiaire</p>
            </div>
            <div class="jsCase">
-             <img class="new-js-logo-1-icon" alt="JavaScript" src="Images/new_js_logo.png" />
+             <img class="new-js-logo-1-icon" alt="JavaScript" src="Images/js.png" />
              <p>Intermédiaire</p>
            </div>
            <div class="sqlCase">
-             <img class="new-sql-logo-1-icon" alt="SQL" src="Images/new_sql_logo.png" />
+             <img class="new-sql-logo-1-icon" alt="SQL" src="Images/sql.png" />
              <p>Intermédiaire</p>
            </div>
            <div class="phpCase">
-             <img class="php-logo-icon-144990" alt="PHP" src="Images/php_logo_icon_144990 1.png" />
+             <img class="php-logo-icon-144990" alt="PHP" src="Images/php.png" />
              <p>Les bases</p>
            </div>
          </div>
@@ -93,17 +102,17 @@
          <div class="design-tools">
            <div class="figmaCase">
              <p style="font-weight: bold">Figma</p>
-             <img class="figma-logo-svgrepo-com-1-icon" alt="Figma" src="Images/figma-logo-svgrepo-com.png" />
+             <img class="figma-logo-svgrepo-com-1-icon" alt="Figma" src="Images/figma.svg" />
              <p>Intermédiaire</p>
            </div>
            <div class="photoshopCase">
              <p style="font-weight: bold">Photoshop</p>
-             <img class="new-photoshop-logo-1-icon" alt="Photoshop" src="Images/new_photoshop_logo.png" />
+             <img class="new-photoshop-logo-1-icon" alt="Photoshop" src="Images/photoshop.png" />
              <p>Les bases</p>
            </div>
            <div class="illustratorCase">
              <p style="font-weight: bold">Illustrator</p>
-             <img class="new-illustrator-logo" alt="Illustrator" src="Images/new_illustrator_logo.png" />
+             <img class="new-illustrator-logo" alt="Illustrator" src="Images/illustrator.png" />
              <p>Les bases</p>
            </div>
          </div>
@@ -113,80 +122,91 @@
  
  
        <!-- Réalisations Section -->
-       <section class="mes-real" data-scroll-to="mesRealContainer">
-         <button id="mesRealisationsText" onclick="window.location.href='projets.html'">Mes Réalisations</button>
-         <div class="realContent">
-           <img
-             class="image-7-icon"
-             alt="Réalisations 1"
-             src="Images/Screen Sport Méca.png"
-           />
-           <img
-             class="image-7-icon1"
-             alt="Réalisations 2"
-             src="Images/Screen CineSympa.png"
-           />
-           <img
-             class="image-7-icon2"
-             alt="Réalisations 3"
-             src="Images/Screen Cache-Cache.png"
-           />
-         </div>
-       </section>
+    <div id="reals">
+       <div class="swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div id="project1">
+                  <img src="Images/cineSympa_screen.png">
+                  <div class="projectText">
+                    <h2> CineSympa</h2>
+                    <p>Voici CineSympa, un site de notation de film inspiré de Allo Ciné. L'objectif de ce projet était d'apprendre à manier les API</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project">
+                  <img src="Images/hide&seek_screen.png">
+                  <div class="projectText">
+                    <h2>Trouver l'imposteur !</h2>
+                    <p>Ce projet avait pour but d'apprendre le Javascript, une grande partie du code à donc été rédigé avec du JS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project">
+                  <img src="Images/sportmeca_screen.png">
+                  <div class="projectText">
+                    <h2>Sport Méca</h2>
+                    <p>Ce projet avait pour but d'apprendre l'HTML et le CSS</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
        <!-- Contact Section -->
-       <section class="container" data-scroll-to="contactContainer">
-         <h1 class="titleContact">Me contacter</h1>
-         <div class="contentContact">
+       <div id="contact" data-scroll-to="contactContainer">
+         <h2 class="titleContact">Me contacter</h2>
            <form id="contact-form">
              <label for="email">Email :</label>
-             <input
-               type="email"
-               id="email"
-               name="email"
-               placeholder="Votre email"
-             />
+             <input type="email" id="email" name="email" placeholder="Votre email"/>
  
              <label for="objet">Objet :</label>
              <input type="text" id="objet" name="objet" placeholder="Objet" />
  
              <label for="message">Message :</label>
-             <textarea
-               id="message"
-               name="message"
-               placeholder="Votre message"
-             ></textarea>
- 
-             <button type="submit">Envoyer</button>
+             <textarea id="message" name="message" placeholder="Votre message"></textarea>
+
            </form>
-           <div class="socialContact">
-             <div class="contact-bloc">
-               <p class="mes-contacts">Mes contacts :</p>
-               <a
-                 href="mailto:duartebasile6@gmail.com"
-                 class="email" style="text-decoration: none; color:white;"
-                 >duartebasile6@gmail.com</a
-               >
-               <p class="phone">+33 (0)6 41 43 67 63</p>
-             </div>
- 
-             <div class="mes-reseaux">
-               <p>Mes réseaux :</p>
-               <img
-                 alt="Facebook"
-                 src="Images/facebook-removebg-preview 2.png"
-               />
-               <img
-                 alt="LinkedIn"
-                 src="Images/linkedin-removebg-preview 2.png"
-               />
-               <img
-                 alt="Instagram"
-                 src="Images/instagram-removebg-preview 2.png"
-               />
-         </div>
-       </section>
+           <button id="btn_form" type="submit">Envoyer</button>
+           <footer>
+            <div id="footer">
+              <div id="email">
+                <a href="mailto:duartebasile6@gmail.com">
+                  <img src="Images/email.png">
+                </a>
+              </div>
+              <div id="phone">
+                <a href="tel:0641436763">
+                  <img src="Images/phone.png">
+                </a>
+              </div>
+              <div id="linkedIn">
+                <a href="https://www.linkedin.com/in/basile-duarte-70921b328/">
+                  <img src="Images/linkedIn.png">
+                </a>
+              </div>
+              <div id="gitHub">
+                <a href="https://github.com/basinho">
+                  <img src="Images/github.png">
+                </a>
+              </div>
+            </div>
+            <hr>
+            <p id="copyright">Tous droits réservés-2025-Basile DUARTE</p>
+          </footer>
+       </div>
      </div>
- 
+       <!-- Footer Section -->
+        
      <!-- JavaScript -->
      <script type="module" src="JS/script.js"></script>
    </body>
