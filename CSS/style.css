@@ -1,5 +1,15 @@
 /* style.css */
+
+@font-face {
+    font-family: 'Neue Helvetica';
+    src: url('../FONTS/HelveticaNeueBlack.otf');
+
+}
 body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +21,6 @@ body, html {
 .main, .main-project{
     width: 100%;
     position: relative;
-    min-height: 100vh;
     overflow: hidden;
     text-align: left;
     font-size: 1.6rem;
@@ -19,41 +28,40 @@ body, html {
     font-family: Anton, sans-serif;
 }
 
-p{
-    font-family: 'Glacial Indifference';
-    font-size: 16px;
+h1{
+    font-size: 400%;
 }
 
-.firstBloc, .competences2, .container,.main-project, .projectContainer{
-    background-image: url('../Images/brown-wooden-textured-flooring-background.jpg');
+h2{
+    font-size: 200%;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 1%;
 }
-.firstBloc{
+
+p{
+    font-family: 'Glacial Indifference';
+    font-size: 100%;
+}
+
+.firstBlock, #competences, #contact,.main-project, .projectContainer{
+    background-image: url('../Images/bg_wood.jpg');
+}
+
+.firstBlock{
     background-size: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 10%;
-    padding: 1rem 2rem;
-    gap: 8rem;
 }
 
-.logo-icon {
-    width: 70px;
-    height: 70px;
-}
-
-.navigation {
+.navigation{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 6rem;
+    flex-direction: row;
+    padding: 2%;
+    gap: 2rem;
 }
 
 .navigation div {
@@ -62,39 +70,39 @@ p{
     letter-spacing: 0,03rem;
 }
 
-.basile-duarte {
-    font-family: 'Metal Mania', cursive;
-    font-size: 64px;
-    color: #fff;
+#developper-web{
+    font-family: 'Neue Helvetica';
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 3%;
+    gap: 2rem;
+}
+
+#developper-web h1, h2{
+    margin: 0;
+}
+
+#developper-web h2 {
+    font-family: 'Neue Helvetica';
+    font-size: 125%;
+    color: gray;
 }
 
 /* Sections */
-section {
-    padding: 4rem 2rem;
-}
-
-.developper-web h1 {
-    width: 625px;
-    text-align: center;
-    font-size: 128px;
-    font-family: 'Metal Mania', cursive; 
-    font-weight: lighter;
-}
-
-.profil3, .competences2, .mes-real, .container {
+#profil, #competences, #real, #contact {
     margin: 0 auto;
 }
 
 /* Profil Section */
-.profil3{
-    padding-top: 1rem;
+#profil{
+    padding: 1rem;
     background-color: white;
 }
 
-.profile-title {
-    font-family: 'Anton';
-    font-weight: lighter;
-    font-size: 48px;
+#profilTitle {
     color: black;
     letter-spacing: 0.03rem;
     text-align: center;
@@ -103,24 +111,28 @@ section {
     
 }
 
-.profile-p1, .profile-p2 {
-    width: 875px;
-    position: relative;
-    font-size: 24px;
-    letter-spacing: 0.03em;
-    display: inline-block;
-    font-family: 'Glacial Indifference';
-    font-style: italic;
-    color: #737373;
-    text-align: left;
-    height: 125px;
-}
-
 .profile-paragraph{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10vw;
+    margin-left: 10%;
+    bottom: 0;
+    gap:4%;
+}
+
+
+#profile-p1, #profile-p2, #profile-p3 {
+    width: 75%;
+    position: relative;
+    letter-spacing: 0.03em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Glacial Indifference';
+    font-style: italic;
+    color: #737373;
+    text-align: left;
+    margin: 0;
+
 }
 
 .pic-cv{
@@ -130,37 +142,45 @@ section {
 }
 
 .image-profil-icon {
+    width: 75%;
+    height: 85%;
     display: block;
     margin: 2rem auto;
-   
-    height: auto;
     border-radius: 10px;
-    width: 23rem;
-    height: 29,5rem;
+    margin-right: 40%;
+   
 }
 
-.cv{
+#cv_btn{
     font-family: Anton, sans-serif;
     font-size: 24px;
     color: black;
     background-color: white;
     border: 1px solid #0b0b0b;
     border-radius: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 4%;
+    margin-right: 25%;
+    cursor: pointer;
+}
+
+#cv_btn:hover {
+    background-color: #0b0b0b;
+    border: 1px solid white;
+    color: white;
 }
 
 .profile-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 5vh;
     margin: 0;
-    gap: 15vw;
+    margin-bottom: 2%; 
+    gap: 5%;
 }
 /* Compétences Section */
-.competences2{
+#competences{
     background-size: 100%;
+    padding: 3rem;
     
 }
 
@@ -172,20 +192,15 @@ section {
 }
 
 .competernceTitle{
-    font-family: 'Anton';
-    font-weight: lighter;
     letter-spacing: 0.03rem;
     text-align: center;
-    font-size: 48px;
     margin-bottom: 1rem;
 }
 
 .competenceText{
-    width: 552px;
+    width: 50%;
     position: relative;
-    font-size: 16px;
     letter-spacing: 0.03em;
-    font-family: 'Glacial Indifference';
     color: #fff;
     text-align: center;
     display: inline-block;
@@ -196,7 +211,7 @@ section {
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
-    gap: 19vw;
+    gap: 20%;
 }
 
 .devBloc{
@@ -274,92 +289,85 @@ section {
     font-weight: bold;
 }
 
-
-/* Réalisations Section */
-.mes-real {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center; 
-    height: 700px; 
-    position: relative; 
-    overflow: hidden; 
-    text-align: center;
-    background-color: black; 
-    padding: 0;
+/*Réalisations Section*/
+#reals{
+    background-color: white;
 }
 
-.mes-real button {
-    text-align: center;
-    position: relative;
-    z-index: 10; 
-    margin: 0;
-    font-size: 2.5rem;
-    font-family: 'Anton', sans-serif;
-    color: #fff;
-    height: 10%;
-    width: 25%;
-    border-radius: 25px;
-    background-color: #0b0b0b;
-    border: 1px solid #fff;
-    cursor: pointer;
+.swiper {   
+    color: black;
+    width: 125rem;
+    height: 50rem;
 }
 
-.mes-real button:hover {
-    background-color: #cf3e3e;
+.swiper-slide img  { 
+    transition: box-shadow 0.3s ease;
+    width: 30%;
+    height: 15%;
+    border-radius: 5%;
+    margin-top: 5%;
+    
 }
-/* Conteneur des images */
-.realContent {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0.25;
+
+.swiper-slide img:hover {
+    box-shadow: inset 0 0 11px rgba(33,33,33,.2);
     z-index: 1;
 }
-.realContent img {
-    position: relative; 
-    width: 33.33%; 
-    height: 100%;
-    object-fit: cover;
-    margin: 0;
-}
-/* SECTION CONTACT */
-.container {
+
+.projectText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 2rem;
+    margin-top: 0;
+}
+
+#project1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 6%;
+}
+
+
+/* SECTION CONTACT */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
     background-size: cover;
     background-position: center;
+    gap: 3rem;
 }
 
 .titleContact {
     width: 100%;
-    font-size: 2rem;
     margin: 0 auto;
     margin-bottom: 2rem;
 }
 
-.contentContact {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
-    margin-top: 2rem;
-}
 
 /* Formulaire de contact */
 #contact-form {
+    width: 50%; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    max-width: 500px; 
-    width: 90%; 
-    margin: 0 auto; 
 }
 
 #contact-form label {
@@ -375,15 +383,16 @@ section {
     font-size: 1rem;
 }
 
-#contact-form button {
-    height: 50px;
-    width: 100%; /* Passe en pleine largeur */
+#btn_form {
+    height: 200%;
+    width: 25%; 
     color: #fff;
     border-radius: 25px;
     background-color: #0b0b0b;
     border: 1px solid #fff;
     font-family: 'Anton', sans-serif;
     font-size: 1rem;
+    padding: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -392,39 +401,28 @@ section {
     background-color: #cf3e3e;
 }
 
-/* Bloc des informations */
-.contact-bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
 
-.emailInfo, .phone {
-    font-size: 1rem;
-    text-align: center; /* Centre les informations */
-    color: #ccc;
-}
+/*Footer Section*/
 
-/* Social Media */
-.socialContact {
-    display: flex;
+#footer {
+    display: flex; 
     flex-direction: row;
-    gap: 1rem;
     justify-content: center;
+    align-items: center;
+    padding: 4rem;
 }
 
-.socialContact a {
-    color: #fff;
-    font-size: 1.5rem;
-    transition: color 0.3s;
+#footer img{
+    width: 25%;
+    height: 25%;
 }
 
-.socialContact a:hover {
-    color: #cf3e3e;
+#copyright {
+    display: flex; 
+    justify-content: center;
+    color: white;
+
 }
-
-
 
 /* Projet-page Section*/
 
